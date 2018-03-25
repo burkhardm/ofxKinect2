@@ -360,6 +360,7 @@ public:
 
 	void setId(UINT64 _id) { id = _id; }
 	inline int getId() const { return id;}
+	inline UINT64 getIdUint64() const { return id; }
 
 	void setTracked(bool _is_tracked) { is_tracked = _is_tracked; }
 	inline bool isTracked() const { return is_tracked;}
