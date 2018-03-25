@@ -1272,11 +1272,13 @@ void Body::drawBone(JointType joint0, JointType joint1, int x, int y, int w, int
 
 		if((state0 == TrackingState_NotTracked) || (state1 == TrackingState_NotTracked))
 		{
+			ofPopStyle();
 			return;
 		}
 
 		if((state0 == TrackingState_Inferred) && (state1 == TrackingState_Inferred))
 		{
+			ofPopStyle();
 			return;
 		}
 
